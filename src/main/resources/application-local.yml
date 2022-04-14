@@ -1,0 +1,4 @@
+# 指定文件上传位置
+file:
+  upload:
+    dir: Y:\\text # 指定本地测试上传目录 (Windows)

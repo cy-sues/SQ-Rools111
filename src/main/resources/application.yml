@@ -1,0 +1,25 @@
+server:
+  port: 7855
+#  servlet:
+#    context-path: /springboot-file
+
+spring:
+  servlet:
+    multipart:   # # 修改文件上传的大小限制
+      max-request-size: 1024MB   # 运行请求传递文件大小最大为1024MB
+      max-file-size: 1024MB       # 运行服务器可以处理的最大文件大小1024MB
+  profiles:
+    active: local # 激活本地配置生效
+
+logging:
+  level:
+    root: info
+    xin.baizhiedu.controller: debug
+
+
+# 指定文件上传位置
+#file:
+#  upload:
+#    dir: D:\temp\1 # 指定本地测试上传目录
+
+
